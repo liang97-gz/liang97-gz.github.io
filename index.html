@@ -133,7 +133,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">1</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">4</span></a>
 
   </li>
   </ul>
@@ -159,6 +159,233 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/18/app%E5%92%8Cweb%E6%B5%8B%E8%AF%95%E5%8C%BA%E5%88%AB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Liang">
+      <meta itemprop="description" content="改变自己">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="liang97-gz">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/12/18/app%E5%92%8Cweb%E6%B5%8B%E8%AF%95%E5%8C%BA%E5%88%AB/" class="post-title-link" itemprop="url">app和web测试区别</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-12-18 13:14:47 / Modified: 15:13:49" itemprop="dateCreated datePublished" datetime="2021-12-18T13:14:47+08:00">2021-12-18</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>单纯从功能测试的层面上来讲的话，APP 测试、web 测试 在流程和功能测试上是没有区别的。根据两者载体不一样，则区别如下：<br>系统结构方面</p>
+<p>web 项目，b/s 架构，基于浏览器的；web 测试只要更新了服务器端，客户端就会同步会更新。app 项目，c/s 结构的，必须要有客户端；app 修改了服务端，则客户端用户所有核心版本都需要<br>进行回归测试一遍。性能方面<br>web 项目 需监测 响应时间、CPU、Memory</p>
+<p>app 项目 除了监测 响应时间、CPU、Memory 外，还需监测 流量、电量等兼容方面<br>  a. web 项目：</p>
+<pre><code>ⅰ. 浏览器（火狐、谷歌、IE 等）
+
+ⅰ. 操作系统（Windows7、Windows10、Linux 等）
+</code></pre>
+<p>  a. app 项目：</p>
+<ol>
+<li><p>设备系统:iOS（ipad、iphone）、Android（三星、华为、联想等） 、Windows（Win7、Win8）、 OSX（Mac）</p>
+</li>
+<li><p>手机设备可根据 手机型号、分辨率不同相对于 Wed 项目，APP 有专项测试</p>
+</li>
+<li><p>干扰测试：中断，来电，短信，关机，重启等</p>
+</li>
+<li><p>弱网络测试（模拟 2g、3g、4g，wifi 网络状态以及丢包情况）；网络切换测试（网络断开后重连、3g 切换到 4g/wifi 等）</p>
+</li>
+</ol>
+<ol start="5">
+<li>安装、更新、卸载</li>
+</ol>
+<p>安装：需考虑安装时的中断、弱网、安装后删除安装文件等情况卸载：需考虑 卸载后是否删除app 相关的文件<br>更新：分强制更新、非强制更新、增量包更新、断点续传、弱网状态下更新</p>
+<ol start="6">
+<li><p>界面操作：关于手机端测试，需注意手势，横竖屏切换，多点触控，前后台切换</p>
+</li>
+<li><p>安全测试：安装包是否可反编译代码、安装包是否签名、权限设置，例如访问通讯录等</p>
+</li>
+<li><p>边界测试：可用存储空间少、没有 SD 卡/双 SD 卡、飞行模式、系统时间有误、第三方依赖（QQ、微信登录）等</p>
+</li>
+<li><p>权限测试：设置某个 App 是否可以获取该权限，例如是否可访问通讯录、相册、照相机等测试工具方面<br>自动化工具：APP 一般使用 Appium; Web 一般使用 Selenium</p>
+</li>
+</ol>
+<p>性能测试工具：APP 一般使用 JMeter; Web 一般使用 LR、JMeter-</p>
+<p>什么问题.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/17/%E4%B8%A4%E5%B9%B4%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Liang">
+      <meta itemprop="description" content="改变自己">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="liang97-gz">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/12/17/%E4%B8%A4%E5%B9%B4%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C/" class="post-title-link" itemprop="url">两年测试面试经验</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-12-17 00:04:26" itemprop="dateCreated datePublished" datetime="2021-12-17T00:04:26+08:00">2021-12-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-12-18 14:14:15" itemprop="dateModified" datetime="2021-12-18T14:14:15+08:00">2021-12-18</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>******             先声明下，这仅仅是我个人经验，我写这篇文章也是为了让自己多总结，不是为了去投机取巧，而仅仅在你无法提升自己能力基础上，去提升自己面试通过率，能力才是基础，要不然都是空中楼阁                             *****<em>1.还没发面试邀请直接问期望薪资的一般是给不了很高工资，所以如果你说了期望值有点高的话，他们不会发面试邀请。(如果获得面试机会，尽量把薪资说底点)。     一般还没发面试邀请问你期望工资，都是看你期望能不能符合他们标准(这个标准一般不高)，无论是自研还是外包公司都是一个德行，前期为了获得面试经验期望薪资尽量说的底点2.面试的时候回问到一个离职原因，一般从发展的角度去考虑(如果是面试外包直接说薪资就好)。自研HR问你如果你回答是薪资问题邀请你面试概率不大。    一般规模稍微大点的公司都有Hr 面试这一关（都是考察你这个人稳定和抗压和对团队做出贡献这方面的能力）既然这样有些可以吹的地方尽量吹(千万不要很诚实态度，这样会吃亏)比如你在这家公司为啥离职。对未来工作一个期望（大概说由于某些现实因素离开现在公司，准备下一家公司长待，技术沉淀）如果问到就在测试做的贡献，在懂得前提下尽量吹是自己一个人独立完成的(hr不懂技术你吹牛逼她也不知道是不是真的，就是使劲吹)3.这次面试我是以工作两年半年的经验去面试的发现面试官除了面试问题更多的是对测试流程和测试方法和你所担任的角色去考察一个人的能力。测试流程和测试理论的把握始终是一个面试基石(比如测试开发这个岗位理解）—————————-第一层Python， Shell， Linux+Docker， Tcp/Ip， Mysq， 测试理论(东西比较多就不一一展开)—————-第二层Pytest， Unittest ，selenium，robotframework， fiddler，postman， 性能测试工具 ，jenkins ，gitlab–第三层框架设计模式 ，平台开发，  CI/CD ，的流水线 ， 算法——   ——————————————-第四层测试流程痛点通过你对各种技术运用改变流程和提高效率    ————————————————-第五层4.面试的时候更多是说对的话而不是说事实。（或多或少都有一些修饰的事情，面试没必要实话实说）面试的时候除了技术要坦诚会就是会，不会就是不会。其他事情就没必要说真话5.简历写好是面试第一步，千万不要把一堆的技能写在一起。看起来特别像是培训出来的。不容易通过简历筛选。  面试通过的一个最重要一个前提是你的简历通过，简历如果不用心好好修改的话。面试结果可想而知，最好是让大佬有经验的看看。不要贸然投简历或者海投简历。我这次投简历策略是（第一阶段）先投了杭州外地的 比如上海的百度，无锡的蚂蚁金服项目，和阿里面试  听起来可能会吓死人但是对你的知识体系是一个很好的考察，不要怕，面不上也很正常(有些问题答不来，在第二轮刚好可以复用)（第二阶段）投一下小公司 比较很久没面试真是演练一下还是有必要的。毕竟小公司问的问题都不深入（第三阶段）开始投中等公司规模。经过第一轮和第二轮准备。再去面试你想去一些公司，把握机会会更大，这个时候真正的硬骨头就来了。需要一家一家去啃（面试效果不好没关系，每个面试官都要自己面试问题这是我们无法改变现实）只要你准备充分就可以通过面试（第四阶段）把你最想去几个公司面试安排放到最后面，经过前三轮你的面试经验和体会已经很清楚(套路也知道)，做最后的冲刺6.工作中遇到测试问题比较深刻的问题，和遇到压力比较大的时期。这些问题Hr和领导非常喜欢问。   这个问题满意答案我目前还没有7.面试的时候更多的是要掌握主动权，比如你非常了解知识点。就可以去展开。尽量是让自己多说，面试官少问。   在有限的时间里。自己多说可以避免面试官少问，整个节奏都是由你来把控。面试官对你的映像也是加分8.面试其实也是对自己工作态度考量，都在呼平时的积累。  如果平时没准备好，想面试期间去补知识点，个人建议还是不要去投简历9.面试更多的是找一家合适的公司。所以约到后面其实面试越难。有点像爬山。努力冲到山顶，剩下的路就好走点了。   面试过程中有些你感觉还不错公司不一定会给你发offfer ,所以面试凭感觉没啥用。关键是hr的一些小动作。面完后突然问你你现在是在职还是提了离职（这种类似情况一般是有戏）10.面试的时候一般会填写表格。一般比较敏感的信息一般最好不要填写。（比如期望薪资，证明人薪资之类的）。   我这次就是被坑了，当时在表格保守写了一下期望薪资，自己也没想太多。最后发offer的时候就按着这个标准写,最好先不要写，一定要了解清楚公司工资结构后说。&lt;&lt;&lt;这个太重要了&gt;&gt;&gt;11.面试之前想好离职原因，未来一个发展方向，对未来的一个规划。  这个问题技术官，HR和领导都喜欢问的 自己要先准好了再说12.最好的找工作状态就是在职找，这样HR就不会压你工资。(压工资现象还是很普遍的)</em>  自己最惨痛体会13.在面试期间如果面试安排非常多，时间紧。如果有其他hr打电话预约面试。千万不要说自己面试很多安排不过来。应该说任务太忙时间不确定。等你确定好了时间在通知她。   都是血的经验教训14.面试中遇到一些不太友好面试官，怎么办？   例如我遇到过一个面试官，他是领导不太懂技术，应该懂点，总是问他们公司一些实际情况问题如何处理，毕竟每个公司流程不一样（我他妈当时心里就很毛躁），他不理解我说的。我也不太明白他说的。还继续追问还有一个面试官，问我一个两年前的项目，我说业务我记不太清初，技术我知道，面试官回答道说不要听具体技术，你就给我列出你当初遇到具体场景（真心不记得，也许自己当时也没学好，被代跑节奏)，我都说了记不清楚，还问我这个，你要考察我记忆力？当时我就有点激动，情绪就被带偏了。所以这两家结果都不太好。所以遇到不友好面试官。不要被他不友好行为带偏​若有收获，就点个赞吧</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/17/%E5%B0%8F%E7%B1%B32s%E5%AE%89%E8%A3%85armhft-armv7-altarch/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Liang">
+      <meta itemprop="description" content="改变自己">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="liang97-gz">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/12/17/%E5%B0%8F%E7%B1%B32s%E5%AE%89%E8%A3%85armhft-armv7-altarch/" class="post-title-link" itemprop="url">小米2s安装armhft armv7 altarch</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-12-17 00:00:15 / Modified: 00:01:56" itemprop="dateCreated datePublished" datetime="2021-12-17T00:00:15+08:00">2021-12-17</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>程序员搜索：<a target="_blank" rel="noopener" href="https://goobe.io/">https://goobe.io/</a><br>CentOS Linux release 7.9.2009 (AltArch)</p>
+<p>清华镜像站<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/">https://mirrors.tuna.tsinghua.edu.cn/</a><br>chmod +x /etc/rc.d/rc.local        rc.local权限<br>yum install vim     安装vim编辑器<br>yum install wget     安装wget<br>Centos下设置Vim的永久显示行号：<a target="_blank" rel="noopener" href="https://blog.csdn.net/u010454030/article/details/44462293">https://blog.csdn.net/u010454030/article/details/44462293</a></p>
+<p>配置centos7(armhf) yum源（中国科学技术大学）：<a target="_blank" rel="noopener" href="https://blog.csdn.net/lhj_168/article/details/85805799">https://blog.csdn.net/lhj_168/article/details/85805799</a><br>华为yum源：<a target="_blank" rel="noopener" href="https://support.huaweicloud.com/prtg-sc-kunpengwebs/kunpengnettytransportnativeopoll_02_0004.html">https://support.huaweicloud.com/prtg-sc-kunpengwebs/kunpengnettytransportnativeopoll_02_0004.html</a></p>
+<p>nginx安装编译：<a target="_blank" rel="noopener" href="https://www.wunote.cn/article/2109/">https://www.wunote.cn/article/2109/</a><br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jackyzm/p/9600738.html">https://www.cnblogs.com/jackyzm/p/9600738.html</a><br>./configure –prefix=/usr/local/nginx –sbin-path=/usr/local/nginx/sbin/nginx –conf-path=/usr/local/nginx/conf/nginx.conf –pid-path=/usr/local/nginx/nginx.pid –user=www –group=www –with-http_ssl_module –with-http_flv_module –with-http_mp4_module  –with-http_stub_status_module –with-select_module –with-poll_module –error-log-path=/home/wwwlogs/error.log –http-log-path=/home/wwwlogs/access.log  –with-pcre=/new/nginx-p/pcre-8.43 –with-zlib=/new/nginx-p/zlib-1.2.11 –with-openssl=/new/nginx-p/openssl-1.1.1l</p>
+<p>nginx启动：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_30709809/article/details/99002495">https://blog.csdn.net/weixin_30709809/article/details/99002495</a><br>service nginx start<br>/etc/init.d/nginx start<br>/etc/init.d/nginx stop</p>
+<p>安卓手机改造服务器——解决chroot下无法使用systemctl  :<a target="_blank" rel="noopener" href="https://www.cnblogs.com/sw-code/p/14998645.html">https://www.cnblogs.com/sw-code/p/14998645.html</a></p>
+<p>blog<br>零成本 | 手把手教你搭建免费个人博客：<a target="_blank" rel="noopener" href="https://blog.51cto.com/u_11451275/3225885">https://blog.51cto.com/u_11451275/3225885</a><br>安装nodejs<br>解决node: /lib/libstdc++.so.6: version GLIBCXX_3.4.20’ not found (required by node)<code>:https://github.com/nodejs/build/issues/1724 解决/lib/libc.so.6: version</code>GLIBC_2.18` not found：<a target="_blank" rel="noopener" href="https://blog.csdn.net/yunlilang/article/details/114824083">https://blog.csdn.net/yunlilang/article/details/114824083</a><br>下载GLIBC <a target="_blank" rel="noopener" href="http://ftp.gnu.org/gnu/glibc/">http://ftp.gnu.org/gnu/glibc/</a><br>在云服务器上全局使用node、npm命令：<a target="_blank" rel="noopener" href="https://blog.csdn.net/traceur0529/article/details/107351535/">https://blog.csdn.net/traceur0529/article/details/107351535/</a><br>npm使用国内镜像加速的几种方法：<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1372949">https://cloud.tencent.com/developer/article/1372949</a><br>npm view XXX     查看可用版本<br>npm i -g <a href="mailto:&#x78;&#x78;&#120;&#x40;&#x31;&#x2e;&#48;&#46;&#49;">&#x78;&#x78;&#120;&#x40;&#x31;&#x2e;&#48;&#46;&#49;</a>     全局安装xxx 1.0.1<br>npm install <a href="mailto:&#104;&#101;&#120;&#x6f;&#x2d;&#99;&#x6c;&#105;&#x40;&#51;&#x2e;&#x31;&#x2e;&#x30;">&#104;&#101;&#120;&#x6f;&#x2d;&#99;&#x6c;&#105;&#x40;&#51;&#x2e;&#x31;&#x2e;&#x30;</a><br>更新hightlight：npm update <a href="mailto:&#x68;&#x69;&#103;&#x68;&#x6c;&#x69;&#x67;&#x68;&#x74;&#x2e;&#x6a;&#115;&#64;&#x31;&#48;&#46;&#48;&#x2e;&#51;">&#x68;&#x69;&#103;&#x68;&#x6c;&#x69;&#x67;&#x68;&#x74;&#x2e;&#x6a;&#115;&#64;&#x31;&#48;&#46;&#48;&#x2e;&#51;</a> 或者更高？</p>
+<p>cd /new/<br>git镜像：<a target="_blank" rel="noopener" href="https://www.linuxmi.com/github-git-clone-suduman.html">https://www.linuxmi.com/github-git-clone-suduman.html</a><br>git clone <a target="_blank" rel="noopener" href="https://hub.fastgit.org/hexojs/hexo-starter.git">https://hub.fastgit.org/hexojs/hexo-starter.git</a></p>
+<p>第二种情况出现：<a target="_blank" rel="noopener" href="https://tangyilong.com/2018/11/29/ERROR-Local-hexo-not-found-in-Hexo/">https://tangyilong.com/2018/11/29/ERROR-Local-hexo-not-found-in-Hexo/</a><br>更新nodejs，重装hexo，配置好命令路径</p>
+<p>hexo-server 报错 TypeError: line.matchAll is not a function<br>：<a target="_blank" rel="noopener" href="https://ask.csdn.net/questions/7436579">https://ask.csdn.net/questions/7436579</a></p>
+<p>.<br>├── _config.yml # 博客的配置文件，您可以在此配置大部分的参数。<br>├── package.json<br>├── scaffolds # 模版文件夹<br>├── source  # 资源文件夹，用来存放您的文章<br>|   ├── _drafts # 草稿文件<br>|   └── _posts # 文章Markdowm文件<br>└── themes  # 主题文件夹</p>
+<p>语雀+本地hexo博客书写：<a target="_blank" rel="noopener" href="https://sci.ci/2021/02/21/yuque/fo0ngh/">https://sci.ci/2021/02/21/yuque/fo0ngh/</a><br>如何用hexo写文章：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/265b2c653e6f">https://www.jianshu.com/p/265b2c653e6f</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -295,7 +522,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
